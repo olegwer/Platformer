@@ -74,8 +74,8 @@ public class PlayerInput : MonoBehaviour
 		jumpPressed		= jumpPressed || Input.GetButtonDown("Jump");
 		jumpHeld		= jumpHeld || Input.GetButton("Jump");
 
-		crouchPressed	= crouchPressed || Input.GetButtonDown("Crouch");
-		crouchHeld		= crouchHeld || Input.GetButton("Crouch");
+		//crouchPressed	= crouchPressed || Input.GetButtonDown("Crouch");
+		//crouchHeld		= crouchHeld || Input.GetButton("Crouch");
 	}
 
 	void ProcessTouchInputs()
