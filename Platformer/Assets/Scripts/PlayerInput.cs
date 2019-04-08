@@ -36,7 +36,8 @@ public class PlayerInput : MonoBehaviour
 		//Process keyboard, mouse, gamepad (etc) inputs
 		ProcessInputs();
 		//Process mobile (touch) inputs
-		ProcessTouchInputs();
+
+		//ProcessTouchInputs();
 
 		//Clamp the horizontal input to be between -1 and 1
 		horizontal = Mathf.Clamp(horizontal, -1f, 1f);
@@ -78,7 +79,7 @@ public class PlayerInput : MonoBehaviour
 		//crouchHeld		= crouchHeld || Input.GetButton("Crouch");
 	}
 
-	void ProcessTouchInputs()
+	/*void ProcessTouchInputs()
 	{
 		//If this isn't a mobile platform AND we aren't testing in editor, exit
 		if (!Application.isMobilePlatform && !testTouchControlsInEditor)
@@ -102,5 +103,5 @@ public class PlayerInput : MonoBehaviour
 		//Record whether or not playing is crouching this frame (used for determining
 		//if button is pressed for first time or held
 		dPadCrouchPrev	= dPadCrouch;
-	}
+	} */
 }
